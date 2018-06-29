@@ -1,3 +1,5 @@
+# code follow along via Corey Schafer on Youtube
+
 from flask import Flask, render_template, url_for, flash, redirect
 from forms import RegistrationForm, LoginForm
 
