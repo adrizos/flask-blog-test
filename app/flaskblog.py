@@ -56,7 +56,7 @@ def home():
 
 @app.route("/about")
 def about():
-    return render_template('about.html', title='About')
+    return render_template('about.html', title='About Page')
 
 
 @app.route("/register", methods=['GET', 'POST'])
@@ -65,7 +65,7 @@ def register():
     if form.validate_on_submit():
         flash(f'Account created for {form.username.data}!', 'success')
         return redirect(url_for('home'))
-    return render_template('register.html', title='Register', form=form)
+    return render_template('register.html', title='Register Page', form=form)
 
 
 @app.route("/login", methods=['GET', 'POST'])
